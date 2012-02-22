@@ -6,6 +6,10 @@ _articles:
     pattern:  /kolumne
     defaults: { _controller: AcmeMainBundle:Default:articles }
 
+_articleSingle:
+    pattern:  /kolumne-single
+    defaults: { _controller: AcmeMainBundle:Default:articleSingle }
+
 _events:
     pattern:  /dogodki
     defaults: { _controller: AcmeMainBundle:Default:events }
@@ -26,10 +30,22 @@ _tutorials:
     pattern:  /vodici
     defaults: { _controller: AcmeMainBundle:Default:tutorials }
 
+_tutorialSingle:
+    pattern:  /vodici-single
+    defaults: { _controller: AcmeMainBundle:Default:tutorialSingle }
+
 _admin:
     pattern:  /admin
     defaults: { _controller: AcmeMainBundle:Default:admin }
 
-_articles:
+_news:
     pattern:  /novice
     defaults: { _controller: AcmeMainBundle:Default:news }
+
+_newsSingle:
+    pattern:  /novice-single
+    defaults: { _controller: AcmeMainBundle:Default:newsSingle }
+
+_irc:
+    pattern:  /irc
+    defaults: { _controller: AcmeMainBundle:Default:irc }

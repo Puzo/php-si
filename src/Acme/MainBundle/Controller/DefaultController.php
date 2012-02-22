@@ -15,12 +15,22 @@ class DefaultController extends Controller
     
     public function articlesAction()
     {
-        return $this->render('AcmeMainBundle:Default:article.html.twig');
+        return $this->render('AcmeMainBundle:Default:articles.html.twig');
+    }
+    
+    public function articleSingleAction()
+    {
+        return $this->render('AcmeMainBundle:Default:articleSingle.html.twig');
     }
     
     public function tutorialsAction()
     {
         return $this->render('AcmeMainBundle:Default:tutorials.html.twig');
+    }
+    
+    public function tutorialSingleAction()
+    {
+        return $this->render('AcmeMainBundle:Default:tutorialSingle.html.twig');
     }
     
     public function forumAction()
@@ -51,5 +61,15 @@ class DefaultController extends Controller
     public function newsAction()
     {
         return $this->render('AcmeMainBundle:Default:news.html.twig');
+    }
+    
+    public function newsSingleAction()
+    {
+        return $this->render('AcmeMainBundle:Default:newsSingle.html.twig');
+    }
+    
+    public function ircAction()
+    {
+        return $this->render('AcmeMainBundle:Default:irc.html.twig');
     }
 }
