@@ -1,0 +1,28 @@
+html {;background-color:#fff;text-align:left;}
+body {font:13px/1.5 Tahoma, Geneva, sans-serif;color:#777;}
+a, a:visited {text-decoration:none;color:#516983;}
+a:hover {color:#b0c0d2;}
+article {margin-bottom:20px;padding-bottom:20px;border-bottom:5px solid #f0f0f0;}
+article .toolbar {float:right;width:240px;text-align:right;}
+article p {text-align: justify;}
+article h4 {text-align:right;}
+h1, h2, h3, h4, h5, h6 {margin:0;padding:0;}
+h1, h2, h3 {font-family:"nimbus-sans-condensed", sans-serif, cursiva;font-weight:700;}
+h4, h5, h6 {font-weight: normal;color:#ccc;}
+.langtag  {background:#f6f6f6;text-shadow: 1px 1px 0px #fff;color:#ccc;padding:0;width:54px;line-height:24px;height:24px;text-align:center;margin:0 5px 5px 0 !important;display:inline-block;font-size:10px;font-weight:bold;}
+.langtag:hover {color:#2b4562 !important;background:#dadada;text-shadow: 1px 1px 0px #fff;}
+.forum-tag {background:#f0f0f0;text-shadow: 1px 1px 0px #fff;width:120px;text-align:center;margin:-10px 0 -10px -10px;display:block;float:left;font-size:24px;font-weight:bold;font-family:"nimbus-sans-condensed", sans-serif, cursiva;font-weight:900;height:70px;line-height:70px;}
+.tag-cplus {color:#fff !important;background:#cbe547;text-shadow:1px 1px 0px #b5da00;}
+.tag-csharp {color:#fff !important;background:#29aff0;text-shadow:1px 1px 0px #0c79c4;}
+.tag-css {color:#fff !important;background:#5ab451;text-shadow:1px 1px 0px #176110;}
+.tag-html {color:#fff !important;background:#f1b7a5;text-shadow:1px 1px 0px #eb9980;}
+.tag-java {color:#fff !important;background:#c40001;text-shadow:1px 1px 0px #670001;}
+.tag-js {color:#fff !important;background:#e3a939;text-shadow:1px 1px 0px #d78500;}
+.tag-php {color:#fff !important;background:#9999cc;text-shadow:1px 1px 0px #666699;}
+.tag-phyton {color:#fff !important;background:#cbbda2;text-shadow:1px 1px 0px #b5a27b;}
+.tag-ruby {color:#fff !important;background:#b7c19a;text-shadow:1px 1px 0px #99a770;}
+.tag-sql {color:#fff !important;background:#a9ddaf;text-shadow:1px 1px 0px #85cf8e;}
+.tag-vbnet {color:#fff !important;background:#ea96ba;text-shadow:1px 1px 0px #de7ca6;}
+.forum-tag:hover {color:#2b4562;background:#dadada;text-shadow: 1px 1px 0px #fff;}
+ul li .langtag {margin:0 !important;float:left;}
+article .langtag {margin:0 0 0 5px !important;}

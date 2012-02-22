@@ -19,11 +19,12 @@
         {% block stylesheets %}{% endblock %}
         <link href="{{ asset('css/prettify.css') }}" type="text/css" rel="stylesheet" />
 	<script src="{{ asset('js/libs/modernizr-2.5.2.min.js') }}"></script>
+    <script type="text/javascript" src="http://use.typekit.com/lav8tne.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
 </head>
 <body onload="prettyPrint(); //adjustHeightInParent()">
 <!-- Glava -->
-
 <div class="whitewrap">
 <header class="clearfix">
     <div id="user-menu" class="user">
@@ -32,32 +33,31 @@
             <ul>
                 <li>Pozdravljen, <span class="status" title="Admin">&Omega;</span>Dodofren |</li>
                 <li><a href="#">Administracija</a> |</li>
-
                 <li><a href="#">Dodaj</a> |
-                                        <div id="drop_dodaj" class="dropmenu">
+                    <?php #Spustni meni // neviden na mobilnih napravah - link jih vodi na novo stran ?>
+                    <div id="drop_dodaj" class="dropmenu">
                         <ul>
                             <li><a href="#">Novico</a></li>
-                            <li><a href="#">Vodi&#269;</a></li>
+                            <li><a href="#">Vodič</a></li>
                             <li><a href="#">Kolumno</a></li>
                         </ul>
-
                     </div>
                 </li>
                 <li><a href="#">Nabiralnik (14)</a> |
-                                        <div id="drop_nabiralnik" class="dropmenu">
+                    <?php #Spustni meni // neviden na mobilnih napravah - link jih vodi na novo stran ?>
+                    <div id="drop_nabiralnik" class="dropmenu">
                         <ul>
                             <li><a href="#">Zasebna sporo&#269;ila (2)</a></li>
                             <li><a href="#">Forumi (5)</a></li>
-
                             <li><a href="#">Članki (7)</a></li>
                         </ul>
                     </div>
                 </li>
                 <li><a href="#">Novosti</a> |
-                        <div id="drop_novosti" class="dropmenu">
+                    <?php #Spustni meni // neviden na mobilnih napravah - link jih vodi na novo stran ?>
+                    <div id="drop_novosti" class="dropmenu">
                         <div class="novosti">
                         <a href="#">Forum</a>
-
                         <span>25 novih tem</span><br />
 
                         <a href="#">Kolumne</a>
@@ -65,7 +65,6 @@
 
                         <a href="#">Vodi&#269;i</a>
                         <span>1 nov vodi&#269;</span>
-
                         </div>
                     </div>
                 </li>
@@ -73,13 +72,12 @@
                 <li><a href="#">Odjava</a></li>
             </ul>
         </nav>
-
     </div>
     <div id="main-navigation" class="nav-src">
         <nav>
-            <a href="/Symfony/web/app.php/" class="current">NOVICE</a>
+            <a href="/Symfony/web/app.php/" class="current">NOVICE</a> <?php #Bodi pozoren na class current, ta naj se med navigacijo postavlja na pravi oddelek! ?>
             <a href="/Symfony/web/app.php/kolumne">KOLUMNE</a>
-            <a href="/Symfony/web/app.php/vodici">VODI&#268;I</a>
+            <a href="/Symfony/web/app.php/vodici">VODIČI</a>
             <a href="/Symfony/web/app.php/forum">FORUM</a>
             <a href="/Symfony/web/app.php/projekti">PROJEKTI</a>
             <a href="/Symfony/web/app.php/dogodki">EVENTI</a>
@@ -89,7 +87,6 @@
         
         <form>
         <input tabindex="2" type="button" id="searchSubmit" class="button" value="ISKANJE"/>
-
         <input tabindex="1" type="text" id="searchText" class="search-field"/>
         </form>
     </div>
@@ -97,24 +94,24 @@
 
 {% block body %}{% endblock %}
 
+</div>
 <footer>
-    <div class="w1200">
+    <div class="w1100">
         <div class="spoznorji">
             <h2>SPONZORJI:</h2>
-
         </div>
 
         &copy; 2012 Jezni Razvijalci | <a href="#">@webmaster</a> | <a href="#">Pravni pouk</a> | <a href="#">RSS Novice</a>
         <nav>
-            <a href="/Symfony/web/app.php/">NOVICE</a>
-
+            <a href="/Symfony/web/app.php">NOVICE</a>
             <a href="/Symfony/web/app.php/kolumne">KOLUMNE</a>
-            <a href="/Symfony/web/app.php/vodici">VODI&#268;I</a>
+            <a href="/Symfony/web/app.php/vodici">VODIČI</a>
             <a href="/Symfony/web/app.php/forum">FORUM</a>
             <a href="/Symfony/web/app.php/projekti">PROJEKTI</a>
             <a href="/Symfony/web/app.php/dogodki">EVENTI</a>
             <a href="/Symfony/web/app.php/borza-dela">BORZA DELA</a>
             <a href="/Symfony/web/app.php/irc">IRC KANAL</a>
+            <a href="#">@ADMIN</a>
         </nav>
     </div>
 </footer>
@@ -138,7 +135,5 @@
   })();
 
 </script>
-<script type="text/javascript" src="http://use.typekit.com/lav8tne.js"></script>
-<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </body>
 </html>

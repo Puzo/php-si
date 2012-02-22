@@ -1,28 +1,20 @@
 /* =============================================================================
-   HTML5 Boilerplate CSS: h5bp.com/css
-   ========================================================================== */
-
+HTML5 Boilerplate CSS: h5bp.com/css
+========================================================================== */
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
 audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
 audio:not([controls]) { display: none; }
 [hidden] { display: none; }
-
 html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 html, button, input, select, textarea { font-family: sans-serif; color: #222; }
 body { margin: 0;padding:0; font-size: 1em; line-height: 1.4; }
-
 ::-moz-selection { background: #9999cc; color: #fff; text-shadow: none; }
 ::selection { background: #9999cc; color: #fff; text-shadow: none; }
-
-code ::-moz-selection { background: #ccc; color: #fff; text-shadow: none; }
-code ::selection { background: #ccc; color: #fff; text-shadow: none; }
-
 a { color: #00e; }
 a:visited { color: #551a8b; }
 a:hover { color: #06e; }
 a:focus { outline: thin dotted; }
 a:hover, a:active { outline: 0; }
-
 abbr[title] { border-bottom: 1px dotted; }
 b, strong { font-weight: bold; }
 blockquote { margin: 1em 40px; }
@@ -35,21 +27,14 @@ pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
 q { quotes: none; }
 q:before, q:after { content: ""; content: none; }
 small { font-size: 85%; }
-
 sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
 sup { top: -0.5em; }
 sub { bottom: -0.25em; }
-
-
 dd { margin: 0 0 0 40px; }
-nav ul, nav ol, ul, ol {list-style:none;list-style-image:none;margin:0;padding:0;}
-
+nav ul, ul {list-style:none;list-style-image:none;margin:0;padding:0;}
 img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
-
 svg:not(:root) { overflow: hidden; }
-
 figure { margin: 0; }
-
 form { margin: 0; }
 fieldset { border: 0; margin: 0; padding: 0; }
 label { cursor: pointer; }
@@ -65,164 +50,179 @@ button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
 textarea { overflow: auto; vertical-align: top; resize: vertical; }
 input:valid, textarea:valid {  }
 input:invalid, textarea:invalid { background-color: #f0dddd; }
-
 table { border-collapse: collapse; border-spacing: 0; }
 td { vertical-align: top; }
-
 .chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
-
-
-
 /* ===== Primary Styles ========================================================
-   Author: Dorian "Dodofren" Bor�o | QA: 
-   ========================================================================== */
-   body {font: 13px/1.5 Tahoma, Geneva, sans-serif;color:#777;text-align:center;background:url(../img/top.jpg)}
-   a, a:visited {text-decoration:none;color:#516983;}
-   a:hover {color:#b0c0d2;}
-   .whitewrap {background:#fff;padding-bottom:20px;}
-   .main {padding:130px 0 0 0;margin:0 auto 20px auto;text-align:left;}
-   .width {max-width:1200px;min-width:960px;}
-   .mobile {padding:0 10px;}
-   .wsidebar {width:840px;float:left;} /* Za vsebino z sidebarom */
-   header {height:90px;position:fixed;width:100%;background:#414141 url(../img/back.jpg) repeat-x 0 40px;top:0;left:0;}
-   footer {background:url(../img/top.jpg) repeat-x 0;height:40px;color:#f0f0f0;height: 100px;padding-top:10px;font-size:11px;}
-   footer a {color:#d2d2d2 !important;}
-   footer a:hover {text-decoration:underline;}
-   footer nav {margin:5px 0;}
-   footer nav a {margin-right:6px;font-size:10px;}
-   footer .w1200 {margin:0 auto;width:1200px;text-align:left;}
-   footer .spoznorji {float:right;width:370px;margin-top:-5px;}
-
+Author: Dorian "Dodofren" Borso | QA:
+========================================================================== */
+html {background-image:url(../img/top.jpg);background-color:#fff;text-align:center;}
+body {font:13px/1.5 Tahoma, Geneva, sans-serif;color:#777;}
+a, a:visited {text-decoration:none;color:#516983;}
+a:hover {color:#b0c0d2;}
+.whitewrap {background:#fff;padding-bottom:20px;}
+.main {padding:130px 0 0 0;margin:0 auto 20px auto;text-align:left;}
+.width {max-width:1100px;min-width:960px;}
+.mobile {padding:0 10px;}
+.wsidebar {width:760px;float:left;} /* Za vsebino z sidebarom */
+header {height:90px;position:fixed;width:100%;background:#414141 url(../img/back.jpg) repeat-x 0 40px;top:0;left:0;}
+footer {background:url(../img/top.jpg) repeat-x 0;height:40px;color:#f0f0f0;height: 100px;padding-top:10px;font-size:11px;}
+footer a {color:#d2d2d2 !important;}
+footer a:hover {text-decoration:underline;}
+footer nav {margin:5px 0;}
+footer nav a {margin-right:6px;font-size:10px;}
+footer .w1100 {margin:0 auto;width:1100px;text-align:left;}
+footer .spoznorji {float:right;width:370px;margin-top:-5px;}
 /* ===== Header ========================================================
-   Authors: Dorian "Dodofren" Borso | QA:
-   ========================================================================== */  
-   .user {height:40px;line-height:40px;margin: 0 auto;max-width:1200px;min-width:960px;text-align:left;color:#c2c2c2;}
-   .user nav {float:right;font-size:11px;}
-   .user nav li {float:left;display:block;padding-left:4px;}
-   .user nav li a {text-shadow:1px 1px 0 #000;color:#ccc;}
-   .user nav li a:hover {color:#b2b2b2;}
-   .dropmenu {display:none;}
-   .user nav li:hover>.dropmenu {display:block;position:absolute;width:150px;background:#666;}
-   .dropmenu ul li {display:block !important;float:none !important;line-height:25px;}
-   .dropmenu ul li a {display:block;padding-left:8px;margin:0;}
-   .dropmenu ul li a:hover {color:#fff;background:#999;}
-   .dropmenu .novosti {padding:5px 8px;line-height:20px;}
-   .dropmenu .novosti a {display:block;line-height:15px;text-shadow:none;font-weight: bold;}
-   .dropmenu .novosti a:hover {color:#fff;}
-   .dropmenu .novosti span {font-size:10px;color:#f0f0f0;}
-   .nav-src {height:50px;margin: 0 auto;max-width:1200px;min-width:960px;text-align:left;}
-   .nav-src nav {float:left;margin-top:10px;line-height:30px;font-size:14px;text-shadow:1px 1px 0 #fff;letter-spacing:2px;}
-   .nav-src nav a {font-family:"nimbus-sans-condensed", sans-serif, cursiva;margin:0 10px 0 0;padding:0 8px;display:block;float:left;}
-   .nav-src nav a:hover, .nav-src nav .current {background:rgba(220,220,220,0.7);color:#516983;}
-   .nav-src input {float:right;margin-top:10px;}
-   .nav-src input[type=text] {background:#fff;border:0;height:30px;color:#b2b2b2;padding:0 5px;width:230px;}
-   .nav-src input[type=button] {background:#b2b2b2;border:0;height:30px;color:#fff;padding:0 5px;font-size:11px;width:60px;}
-   .nav-src input[type=button]:hover, .nav-src input[type=submit]:focus {background:#;}
-   
+Authors: Dorian "Dodofren" Borso | QA:
+========================================================================== */
+.user {height:40px;line-height:40px;margin: 0 auto;max-width:1100px;min-width:960px;text-align:left;color:#c2c2c2;}
+.user nav {float:right;font-size:11px;}
+.user nav li {float:left;display:block;padding-left:4px;}
+.user nav li a {text-shadow:1px 1px 0 #000;color:#ccc;}
+.user nav li a:hover {color:#b2b2b2;}
+.dropmenu {display:none;}
+.user nav li:hover>.dropmenu {display:block;position:absolute;width:150px;background:#666;}
+.dropmenu ul li {display:block !important;float:none !important;line-height:25px;padding:0;}
+.dropmenu ul li a {display:block;padding-left:8px;margin:0;}
+.dropmenu ul li a:hover {color:#fff;background:#999;}
+.dropmenu .novosti {padding:5px 8px;line-height:20px;}
+.dropmenu .novosti a {display:block;line-height:15px;text-shadow:none;font-weight: bold;}
+.dropmenu .novosti a:hover {color:#fff;}
+.dropmenu .novosti span {font-size:10px;color:#f0f0f0;}
+.nav-src {height:50px;margin: 0 auto;max-width:1100px;min-width:960px;text-align:left;}
+.nav-src nav {float:left;margin-top:10px;line-height:30px;font-size:14px;text-shadow:1px 1px 0 #fff;letter-spacing:2px;}
+.nav-src nav a {font-family:"nimbus-sans-condensed", sans-serif, cursiva;margin:0;padding:0 8px;display:block;float:left;}
+.nav-src nav a:hover, .nav-src nav .current {background:rgba(220,220,220,0.7);color:#516983;}
+.nav-src input {float:right;margin-top:10px;}
+.nav-src input[type=text] {background:#fff;border:0;height:30px;color:#b2b2b2;padding:0 5px;width:230px;}
+.nav-src input[type=button] {background:#b2b2b2;border:0;height:30px;color:#fff;padding:0 5px;font-size:11px;width:60px;}
+.nav-src input[type=button]:hover, .nav-src input[type=submit]:focus {background:#333;}
 /* ===== Content classes ========================================================
-   Authors: Dorian "Dodofren" Borso | QA:
-   ========================================================================== */
-   article {margin-bottom:20px;padding-bottom:20px;border-bottom:5px solid #f0f0f0;}
-   article .toolbar {float:right;width:240px;text-align:right;}
-   article p {text-align:justify;}
-   article h4 {text-align:right;}
-   
+Authors: Dorian "Dodofren" Borso | QA:
+========================================================================== */
+article {margin-bottom:20px;padding-bottom:20px;border-bottom:5px solid #f0f0f0;}
+article .toolbar {float:right;width:240px;text-align:right;}
+article p {text-align: justify;}
+.comment {margin-bottom:20px;border-bottom:1px solid #ccc;}
+.commenter {width:150px;float:left;}
+.commenter img {display:block;margin:10px 0;border:2px solid #f0f0f0;background:#fff;padding:3px;}
+.comment-text {float:right;width:590px;margin-top:-10px;padding-bottom:10px;}
+.reply_bar {text-align:right;}
+.reply_bar a {opacity:0.7;}
+.reply_bar a:hover {opacity:1;}
+.tArticle pre {margin:40px 0;}
+ol li:before {background:#ccc !important;color:#fff;}
+section {margin-left:-20px;}
+.forum-section {background:#f0f0f0;margin:0 0 20px 0;}
+.forum-section .forumtag {margin:0 20px 0 0;}
+.fstat {float:right;width:200px;font-size:11px;}
+.fstat span {display:block;color:#aaa;font-family:"nimbus-sans-condensed", sans-serif, cursiva;font-size:22px;font-weight:700;margin-top:17px;line-height:18px;}
+.forumlang .fstat {width:150px;}
 /* ===== Sidebars & Widgets ========================================================
-   Authors: Dorian "Dodofren" Borso | QA:
-   ========================================================================== */
-   .sidebar {width:300px;margin-left:40px;float:right;margin-top:-8px;}
-   .sidebar .box {margin-bottom:30px;}
-   .box-content {padding:10px 0 0 0;}
-   .box-content ul {margin-bottom:-5px;}
-   .box-content li {background:#f6f6f6;margin-bottom:5px;font-size:11px;height:24px;line-height:24px;padding:5px;}
-   .box-content .list-item {padding:0 5px;display:block;float:left;width:226px;}
-   .box-content .list-item:hover {background:#ddd;color:#516983;}
-   
+Authors: Dorian "Dodofren" Borso | QA:
+========================================================================== */
+.sidebar {width:300px;float:right;margin-top:-8px;text-align:justify;font-size:11px;color:#aaa;}
+.sidebar .box {margin-bottom:30px;}
+.sidebar p {padding:0 0 10px;margin:0;}
+.sidebar h4 {margin-bottom:10px;color:#999;font-size:13px;}
+.sidebar h4 a {font-weight:bold;}
+.box-content {padding:10px 0 0 0;}
+.box-content ul {margin-bottom:-5px;border-bottom:1px solid #e2e2e2;}
+.box-content li {background:#f6f6f6;font-size:11px;height:24px;line-height:24px;padding:2px 0;border-top:1px solid #e2e2e2;}
+.box-content .list-item {padding:0 5px;display:block;float:left;width:236px;}
+.box-content .list-item:hover {background:#fcfcfc;color:#516983;}
+.list-articles {padding:0;list-style: none;margin:0;border-bottom:1px solid #e2e2e2;}
+.list-articles li {line-height:30px;height:30px;margin:0;border-top:1px solid #e2e2e2;padding:0;}
+.list-articles li a {display:block;padding:0 10px;}
+.list-articles li a:hover {background:#fcfcfc;}
+#about_author img {float:right;margin:0 0 0 10px;border:2px solid #f0f0f0;background:#fff;padding:3px;}
 /* ===== Additional Styles ========================================================
-   Authors: Dorian "Dodofren" Borso | QA:
-   ========================================================================== */
-   .status {color:#fc0000;}
-   .typekit-badge {display:none !important;}
+Authors: Dorian "Dodofren" Borso | QA:
+========================================================================== */
+.status {color:#fc0000;}
+.typekit-badge {display:none !important;}
+.infobar {margin-bottom:20px;background:#fcfcfc;border:1px solid #f0f0f0;color:#999;padding:10px;font-size:11px;}
+.infobar a {color:#9999cc;}
+.infobar a:hover {text-decoration: underline;}
+.infobar h3 {font-size:18px;letter-spacing: 1px;font-weight: 400;}
+.tut {margin-top:10px;float:right;width:210px;margin-left:20px;}
+.tut ul {list-style: circle;padding-left:10px;}
+.tut li {margin-left:10px;line-height: 15px;}
+.tut b {color:#9999cc;display:block;background:#fff;}
 /* ===== Headers ========================================================
-   Authors: Dorian "Dodofren" Bor�o | QA: 
-   ========================================================================== */
-   h1, h2, h3, h4, h5, h6 {margin:0;padding:0;}
-   h1, h2, h3 {font-family:"nimbus-sans-condensed", sans-serif, cursiva;font-weight:700;}
-   h4, h5, h6 {font-weight: normal;color:#ccc;}
-   
-   .user h1 {float:left;}
-   .user h1 {font-size:24px;letter-spacing:4px;color:#f0f0f0;}
-   .sidebar h2 {font-size:24px;color:#c2c2c2;letter-spacing:2px;}
-   article h1 {font-size:24px;letter-spacing:1px;text-transform:uppercase;line-height:24px;width:550px;}
-   article h1 span {color:#ccc;font-size:16px;padding-right:10px;display:inline-block;vertical-align:middle;}
+Authors: Dorian "Dodofren" Borso | QA:
+========================================================================== */
+h1, h2, h3, h4, h5, h6 {margin:0;padding:0;}
+h1, h2, h3 {font-family:"nimbus-sans-condensed", sans-serif, cursiva;font-weight:700;}
+h4, h5, h6 {font-weight: normal;color:#ccc;}
+.user h1 {float:left;}
+.user h1 {font-size:24px;letter-spacing:4px;color:#f0f0f0;}
+.sidebar h2 {font-size:24px;color:#c2c2c2;letter-spacing:2px;}
+.sidebar h3 {font-size:18px;color:#c2c2c2;letter-spacing:2px;text-transform:uppercase;}
+article h1 {font-size:24px;letter-spacing:1px;text-transform:uppercase;line-height:24px;width:550px;}
+article h1 span {color:#ccc;font-size:16px;padding-right:10px;display:inline-block;vertical-align:middle;}
+article h4 {text-align:right;}
+.cArticle h4 {text-align:left;}
+.forums h1 {margin-bottom:14px;}
 /* ===== Tags & Badges ========================================================
-   Authors: Dorian "Dodofren" Bor�o | QA: 
-   ========================================================================== */
-    .langtag  {background:#f6f6f6;text-shadow: 1px 1px 0px #fff;color:#ccc;padding:0;width:54px;line-height:24px;height:24px;text-align:center;margin:0 5px 5px 0 !important;display:inline-block;font-size:10px;font-weight:bold;}
-   .langtag:hover {color:#2b4562 !important;background:#dadada;text-shadow: 1px 1px 0px #fff;}
-   .forum-tag {background:#f0f0f0;text-shadow: 1px 1px 0px #fff;width:120px;text-align:center;margin:-10px 0 -10px -10px;display:block;float:left;font-size:24px;font-weight:bold;font-family:"nimbus-sans-condensed", sans-serif, cursiva;font-weight:900;height:70px;line-height:70px;}
-   .tag-cplus {color:#fff !important;background:#cbe547;text-shadow:1px 1px 0px #b5da00;}
-   .tag-csharp {color:#fff !important;background:#29aff0;text-shadow:1px 1px 0px #0c79c4;}
-   .tag-css {color:#fff !important;background:#5ab451;text-shadow:1px 1px 0px #176110;}
-   .tag-html {color:#fff !important;background:#f1b7a5;text-shadow:1px 1px 0px #eb9980;}
-   .tag-java {color:#fff !important;background:#c40001;text-shadow:1px 1px 0px #670001;}
-   .tag-js {color:#fff !important;background:#e3a939;text-shadow:1px 1px 0px #d78500;}
-   .tag-php {color:#fff !important;background:#9999cc;text-shadow:1px 1px 0px #666699;}
-   .tag-phyton {color:#fff !important;background:#cbbda2;text-shadow:1px 1px 0px #b5a27b;}
-   .tag-ruby {color:#fff !important;background:#b7c19a;text-shadow:1px 1px 0px #99a770;}
-   .tag-sql {color:#fff !important;background:#a9ddaf;text-shadow:1px 1px 0px #85cf8e;}
-   .tag-vbnet {color:#fff !important;background:#ea96ba;text-shadow:1px 1px 0px #de7ca6;}
-   .forum-tag:hover {color:#2b4562;background:#dadada;text-shadow: 1px 1px 0px #fff;}
-   ul li .langtag {margin:0 !important;float:left;}
-   article .langtag {margin:0 0 0 5px !important;}
-
-   .comment {margin-bottom:20px;border-bottom:1px solid #ccc;}
-   .commenter {width:150px;float:left;}
-   .comment-text {float:right;width:690px;margin-top:-10px;padding-bottom:10px;}
-   .user-badges {height:20px;margin-bottom:15px;}
-   .user-badges span {display:block;float:left;text-indent:-999em;width:20px;height:20px;line-height:25px;background-position:center center;background-repeat:no-repeat;}
-   .badmin {background:url(../img/badges/badmin.png);}
-   .b500 {background-image:url(../img/badges/b500.png);}
-   .b1000 {background-image:url(../img/badges/b1000.png);}
-   .b5000 {background-image:url(../img/badges/b5000.png);}
-   .bherald {background-image:url(../img/badges/bherald.png);}
+Authors: Dorian "Dodofren" Bor�o | QA:
+========================================================================== */
+.langtag, .reply_button, .report_button {text-transform:uppercase;background:#f6f6f6;text-shadow: 1px 1px 0px #fff;color:#ccc;padding:0;width:54px;line-height:24px;height:24px;text-align:center;margin:0 5px 5px 0 !important;display:inline-block;font-size:10px;font-weight:bold;}
+.langtag:hover, .reply_button:hover, .report_button:hover {color:#2b4562 !important;background:#dadada;text-shadow: 1px 1px 0px #fff;}
+.forumtag {background:#c0c0c0;text-shadow: 1px 1px 0px #fff;width:136px;text-align:center;margin:0 0 20px 20px;display:block;float:left;font-size:21px;font-weight:bold;font-family:"nimbus-sans-condensed", sans-serif, cursiva;font-weight:900;height:70px;line-height:70px;}
+.tag-cplus {color:#fff !important;background:#cbe547;text-shadow:1px 1px 0px #b5da00;}
+.tag-csharp {color:#fff !important;background:#29aff0;text-shadow:1px 1px 0px #0c79c4;}
+.tag-css {color:#fff !important;background:#5ab451;text-shadow:1px 1px 0px #176110;}
+.tag-html {color:#fff !important;background:#f1b7a5;text-shadow:1px 1px 0px #eb9980;}
+.tag-java, .report_button {color:#fff !important;background:#c40001;text-shadow:1px 1px 0px #670001;}
+.tag-js {color:#fff !important;background:#e3a939;text-shadow:1px 1px 0px #d78500;}
+.tag-php, .reply_button {color:#fff !important;background:#9999cc;text-shadow:1px 1px 0px #666699;}
+.tag-phyton {color:#fff !important;background:#cbbda2;text-shadow:1px 1px 0px #b5a27b;}
+.tag-ruby {color:#fff !important;background:#b7c19a;text-shadow:1px 1px 0px #99a770;}
+.tag-sql {color:#fff !important;background:#a9ddaf;text-shadow:1px 1px 0px #85cf8e;}
+.tag-vbnet {color:#fff !important;background:#ea96ba;text-shadow:1px 1px 0px #de7ca6;}
+.forumtag:hover {color:#2b4562 !important;background:#dadada;text-shadow: 1px 1px 0px #fff;}
+ul li .langtag {margin:0 !important;float:left;}
+article .langtag {margin:0 0 0 5px !important;}
+.user-badges {height:20px;margin-bottom:15px;}
+.user-badges span {display:block;float:left;text-indent:-999em;width:20px;height:20px;line-height:25px;background-position:center center;background-repeat:no-repeat;}
+.badmin {background:url(../img/badges/badmin.png);}
+.b500 {background-image:url(../img/badges/b500.png);}
+.b1000 {background-image:url(../img/badges/b1000.png);}
+.b5000 {background-image:url(../img/badges/b5000.png);}
+.bherald {background-image:url(../img/badges/bherald.png);}
+.reply_button, .report_button {width:80px;}
 /* =============================================================================
-   Media Queries
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-	/* Style adjustments for viewports that meet the condition */
-}
-
+Media Queries
+========================================================================== */
+@media only screen and (min-width: 35em) {/* Style adjustments for viewports that meet the condition */}
 /* =============================================================================
-   Non-Semantic Helper Classes
-   ========================================================================== */
-   
-   .ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; *line-height: 0; }
-   .ir br { display: none; }
-   .hidden { display: none !important; visibility: hidden; }
-   .visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
-   .visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
-   .invisible { visibility: hidden; }
-   .clearfix:before, .clearfix:after { content: ""; display: table; }
-   .clearfix:after { clear: both; }
-   .clearfix { *zoom: 1; }
-
+Non-Semantic Helper Classes
+========================================================================== */
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; *line-height: 0; }
+.ir br { display: none; }
+.hidden { display: none !important; visibility: hidden; }
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+.invisible { visibility: hidden; }
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
 /* =============================================================================
-   Print Styles
-   ========================================================================== */
- 
+Print Styles
+========================================================================== */
 @media print {
-  * { background: transparent !important; color: black !important; box-shadow:none !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
-  a, a:visited { text-decoration: underline; }
-  a[href]:after { content: " (" attr(href) ")"; }
-  abbr[title]:after { content: " (" attr(title) ")"; }
-  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
-  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
-  thead { display: table-header-group; } /* h5bp.com/t */
-  tr, img { page-break-inside: avoid; }
-  img { max-width: 100% !important; }
-  @page { margin: 0.5cm; }
-  p, h2, h3 { orphans: 3; widows: 3; }
-  h2, h3 { page-break-after: avoid; }
+* { background: transparent !important; color: black !important; box-shadow:none !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
+a, a:visited { text-decoration: underline; }
+a[href]:after { content: " (" attr(href) ")"; }
+abbr[title]:after { content: " (" attr(title) ")"; }
+.ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+thead { display: table-header-group; } /* h5bp.com/t */
+tr, img { page-break-inside: avoid; }
+img { max-width: 100% !important; }
+@page { margin: 0.5cm; }
+p, h2, h3 { orphans: 3; widows: 3; }
+h2, h3 { page-break-after: avoid; }
 }
